@@ -10,10 +10,15 @@ The "main_example.cu" applies first the Forward DWT and then the Reverse DWT ove
 Several precompilation parameters are defined in "RBased_DWT_common.h". Most important are:
 
 -DDWT53_or_DWT97: =1 the DWT 5/3 is computed, =0 the DWT 9/7
+
 -DNEXPERIMNETS: Number of random generated images computed. 
+
 -DEXPERIMENT_INI: Size in both dimensions of the random generated input image employed.
+
 -DNELEMENTS_THREAD_Y : Lenght in samples of the Data block computed by each warp. Width is fixed to 64 samples.
+
 -DSHUFFLE: If =1 the shufle instructions are employed in the computation. If =0, an intermediate buffer in shared memory is instead used (for pre-Kepler architectures).
+
 -DLEVELS : Number of DWT decomposition levels applied.
 
 
