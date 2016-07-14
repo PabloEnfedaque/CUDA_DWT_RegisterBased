@@ -68,7 +68,7 @@ typedef enum DWT{
 
 //The following precompilation parameters determine the sizes and number of the random generated images employed in the "main_example". Experiments start with an image of size EXPERIMENT_INI x EXPERIMENT_INI, and each of the followin experiments increase each dimension of this image by EXPERIMENT_INCREMENT.
 
-#if !defined(NEXPERIMNETS)
+#if !defined(NEXPERIMENTS)
 	#define NEXPERIMNETS			10
 #endif
 
