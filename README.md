@@ -1,5 +1,5 @@
 The code of this project have been developed for research pourposes. 
-Square images of size i*2 x i*2 with i > 64 have been employed for all experiments. This implementation may not properly work for other image sizes.
+Square images of size i\*2 x i\*2 with i > 64 have been employed for all experiments. This implementation may not properly work for other image sizes.
 
 The "main_example.cu" applies first the Forward DWT and then the Reverse DWT over a set of randomly generated images. It can be compiled, executed and profiled using the nvcc compiler as follows:
 
