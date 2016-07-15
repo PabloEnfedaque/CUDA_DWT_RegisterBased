@@ -9,17 +9,17 @@ The "main_example.cu" first applies the Forward DWT and then the Reverse DWT ove
 
 Several precompilation parameters are defined in "RBased_DWT_common.h". Most important are:
 
--DDWT53_or_DWT97: =1 the DWT 5/3 is computed, =0 the DWT 9/7
-
--DNEXPERIMENTS: Number of randomly generated images computed. 
-
--DEXPERIMENT_INI: Size in both dimensions of the randomly generated input image employed.
-
--DNELEMENTS_THREAD_Y : Length in samples of the Data block computed by each warp. Width is fixed to 64 samples.
-
--DSHUFFLE: If =1 the shuffle instructions are employed in the computation. If =0, an intermediate buffer in shared memory is used instead (for pre-Kepler architectures).
-
--DLEVELS : Number of DWT decomposition levels applied.
+	-DDWT53_or_DWT97: =1 the DWT 5/3 is computed, =0 the DWT 9/7
+	
+	-DNEXPERIMENTS: Number of randomly generated images computed. 
+	
+	-DEXPERIMENT_INI: Size in both dimensions of the randomly generated input image employed.
+	
+	-DNELEMENTS_THREAD_Y : Length in samples of the Data block computed by each warp. Width is fixed to 64 samples.
+	
+	-DSHUFFLE: If =1 the shuffle instructions are employed in the computation. If =0, an intermediate buffer in shared memory is used instead (for pre-Kepler architectures).
+	
+	-DLEVELS : Number of DWT decomposition levels applied.
 
 
 Depending on the CUDA architecture, the code can be compiled as follows:
